@@ -29,7 +29,7 @@ public class Test6 {
 		System.out.println("Area:" + width*height/2);
 		area = Double.parseDouble(br.readLine());	
 		
-		System.out.printf("area: %g", area);
+		System.out.printf("area: %.3g", area);
 	}
 
 }

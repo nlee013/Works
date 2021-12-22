@@ -27,9 +27,7 @@ public class Test6 {
 		height = Double.parseDouble(br.readLine());
 		
 		System.out.println("Area:" + width*height/2);
-		area = Double.parseDouble(br.readLine());	
-		
-		System.out.printf("area: %g", area);
+		area = Double.parseDouble(br.readLine());		
 	}
 
 }
