@@ -24,10 +24,11 @@ class Test2 {
 		System.out.println(a);
 		System.out.println(b);
 		
-		//System.out.println(c); 쓰레기값은 출력불가. 실행 전에 빨간 줄 = 컴파일 오류 = 반드시 오류 수정해야됨.
-		//Runtime error = 실행 전에는 오류가 없지만 실행 후 오류남
-		//실행이 6번 돌고 오류가 났을 경우는 Logic을 수정하면 됨
-		
+		/*System.out.println(c); 쓰레기값은 출력불가.
+		->실행 전에 빨간 줄 = 컴파일 오류 = 반드시 오류 수정해야됨.
+		Runtime error = 실행 전에는 오류가 없지만 실행 후 오류남
+		실행이 6번 돌고 오류가 났을 경우는 Logic을 수정하면 됨
+		*/
 		
 		c = a + b;
 		
@@ -37,7 +38,8 @@ class Test2 {
 		
 		System.out.println(d);
 		
-		System.out.println(a + "+" + b + "=" + c);
+		//""안에 들어가는 것은 문자 = string. + 은 붙여써서 쓰임.
+		System.out.println(a + "+" + b + "=" + c); 
 		System.out.println(); //enter 효과 = 줄 바꿈
 		System.out.println(b + "-" + c + "=" + d);
 		

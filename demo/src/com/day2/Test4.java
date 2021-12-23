@@ -22,16 +22,15 @@ public class Test4 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int r;
-		//double g;
-		
+		//double r;
+	
 		double area, length;
 		
 		System.out.println("Radius?");//radius = 10
 		
 		r = Integer.parseInt(br.readLine());
-		//g = Double.parseDouble(br.readLine());
+		//r = Double.parseDouble(br.readLine());
 		//Integer(4 byte) < Double(8 byte)이므로 Double이 Integer를 포함가능하므로 error가 안남
-
 		
 		area = r*r*3.14;
 		

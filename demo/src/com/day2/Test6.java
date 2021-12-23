@@ -17,6 +17,7 @@ public class Test6 {
 		
 		//int width, height, area;
 		double width, height, area;
+		//float f;
 		
 		System.out.print("Width?:"); //10
 		//width = Integer.parseInt(br.readLine());
@@ -27,8 +28,14 @@ public class Test6 {
 		height = Double.parseDouble(br.readLine());
 		
 		System.out.println("Area:" + width*height/2);
-		area = Double.parseDouble(br.readLine());	
+		area = Double.parseDouble(br.readLine());
 		
+		//f = Float.parseFloat(br.readLine());
+		
+		//위의 코드가 다른 방식으로는 아래 코드 참조.
+		//area = width*height/2;<- int일때 area = width*height/2.0; <- double
+		//System.out.println("Area:" + area);
+
 		System.out.printf("area: %g", area);
 	}
 

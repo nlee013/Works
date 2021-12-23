@@ -11,7 +11,7 @@ public class Test5 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		//console에 읽어올때는 in사용. 출력할 때는 out
 		
-		// 자료형. Class
+		// String -> 자료형처럼 쓰이는 Class
 		String name;
 		int kor, eng, tot;
 		
