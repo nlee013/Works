@@ -8,17 +8,17 @@ public class Test11 {
 		//if문은 종류 3가지. if, else, else if
 		
 		//new는 복사의 의미.
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); //
 		
 		String name;
 		int kor;
 		
-		System.out.println("What's your name? :");
+		System.out.println("What's your name? ");
 		
 		//next는 가져오다는 의미. next는 string으로 가져오고 name을 string으로 선언했기에 알맞는 코드임.
 		name = sc.next();
 		
-		System.out.println("What's your Korean score?");
+		System.out.println("What's your Korean score? ");
 		//nextInt는 Scanner의 숫자 int이므로
 		kor = sc.nextInt();
 		

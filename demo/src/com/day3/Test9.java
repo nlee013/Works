@@ -16,16 +16,16 @@ public class Test9 {
 		
 		char ch, result;
 		
-		System.out.print("Only one character?");// a(97) -> 1byte -> System.in 으로 읽어낼 수 있음
+		System.out.print("Only one character?");// a(97) -> 1byte -> System.in의 read를 통해 아스키값을 읽어낼 수 있음
 		
-		// System.in.read();의 read는 int로 불러오기 때문에 int로 표기해야됨. 강제 형 변환.
-		//char는 기호 저장함으로 int로 변환
+		// System.in.read();의 read는 int로 불러오기 때문에 int로 표기해야됨. 
+		//char는 기호 저장함으로 int로 강제 형 변환.
 		//예외 처리 쓰기  -> throws IOException
 		
 		ch = (char) System.in.read(); //97 return 정수로 int로 넣어야되어서 char로 들어감.
 		
 		System.out.println(ch);
-		System.out.println(Integer.toString(ch)); //문자 -> 숫자로 변환
+		System.out.println(Integer.toString(ch)); //문자 -> 숫자(97)로 변환
 		
 		//ch>='a' -> ch>=97과 같이 표기 가능.
 		//?는 예약어 = 정해놓은 문법 기호

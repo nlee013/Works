@@ -13,7 +13,7 @@ public class Test8 {
 		int num1, num2;
 		
 		System.out.print("What is the first number?:");//25
-		num1 = Integer.parseInt(br.readLine());
+		num1 = Integer.parseInt(br.readLine()); //readline은 string 타입이여서 Integer을 이용해
 		
 		System.out.println("What is the second number?:");//27
 		num2 = Integer.parseInt(br.readLine());
@@ -37,6 +37,7 @@ public class Test8 {
 		
 		String str;
 		
+		//if 대신에 짧게 쓸 수 있어서 웹 코딩에 쓰임.
 		//삼항 연산자 (조건?   true값   :  false 값)-> 3개의 항으로 이루어져있기 때문.
 		str = num1 % 2 == 0? "even number": "odd number";
 		
@@ -46,6 +47,7 @@ public class Test8 {
 		
 		//A (and)&& B -> A와 B 둘다 true. -> 둘다 true여야지 결과값이 true.
 		//A  (or)|| B -> A만 true/B만 true/ 둘다 true ->한 쪽이 true 이면 결과 값이 true.
+		//DB에서는 ||의 데이터가 많다.
 		str = (num1 % 4 == 0) && (num1 % 100 != 0) || (num1 % 400 ==0)? "윤년" : "평년";
 		
 		System.out.println(num1 + ":" + str);
