@@ -11,7 +11,7 @@ public class Day5Q2 {
 	public static void main(String[] args) throws IOException {
 
 		int[] num = new int[10];
-		int com, user, cnt, i, j, temp;
+		int com, user, cnt;
 		char ans;
 		
 		Scanner sc = new Scanner(System.in);
@@ -22,6 +22,33 @@ public class Day5Q2 {
 		System.out.println(com);//com이 생각한 값
 		
 		while(true) {
+			
+			for(int i = 0; i < 3; i++) {
+				System.out.print("Guess what is this number!: ");
+				num[i] = sc.nextInt();
+				
+				if(com == num[i]) {
+					System.out.print("Correct!!\n");
+					break;
+				}
+				else {
+					System.out.print("Wrong!!\n");
+				}
+			}
+			
+			System.out.printf("The answer is: %d", com);
+			System.out.println("Do you want to continue? [Y/N]");
+			
+			ans = (char) System.in.read();
+			
+			if(ans != 'Y' && ans !='y') {
+				System.out.println("The End!");
+				break;
+			}
+		}
+		
+		
+		/*while(true) {
 			
 			cnt = 0;
 			
@@ -53,14 +80,11 @@ public class Day5Q2 {
 			
 			ans = (char)System.in.read();
 			
-			if(ans == 'Y' && ans == 'y') {
+			if(ans != 'Y' && ans != 'y') {
+			System.out.println("The End!");
 	        break;
-	        
-			}else{
-				System.out.print("The End!");
-				break;
 			}
-		}
+		}*/
 	}
 
 }

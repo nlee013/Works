@@ -1,6 +1,6 @@
 package com.day5assign;
 
-//1. 5개의 정수를 입력받아 입력받은 수를 출력하고
+//1. 5개의 정수를 입력받아 입력받은 수를 출력하고 
 //입력받은 수 중 가장 큰수와 적은수를 출력
 
 import java.util.Scanner;
@@ -18,26 +18,31 @@ public class Day5Q1 {
 		
 		for(i = 0; i < num.length; i++) {
 			
-		num[i] = sc.nextInt(); 
-		
-			for(i = 0; i < num.length-1; i++) {
-				for(j = i + 1; j < num.length; j++) {
-					if(num[i] > num[j]) {
-						temp = num[i];
-						num[i] = num[j];
-						num[j] = num[i];
-						System.out.println("The biggest number is: " + num[i]);
-					}
-					else{
-						
-						System.out.println("The smallest number is: " + num[j]);
-
-					}
-				}
-			}
+			num[i] = sc.nextInt(); 
 		}
 		
+		for(i = 0; i < num.length-1; i++) {
+				
+				for(j = i + 1; j < num.length; j++) {
+					
+					if(num[i] > num[j]) {
+						
+						temp = num[i];
+						num[i] = num[j];
+						num[j] = temp;
+						
+						/*num[i] = num[i] ^ num[j];
+						num[j] = num[i] ^ num[j];
+						num[i] = num[i] ^ num[j];*/
+					}
+				}
+		}
+		j = 0;
+		System.out.printf("The biggest number is: %d, The smallest number is: %d", num[i], num[j]);
 
-	}
+	  }
+		
 
-}
+  }
+
+
