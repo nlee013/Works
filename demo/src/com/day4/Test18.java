@@ -11,10 +11,9 @@ public class Test18 {
 		for(n = 1; n <= 100; n++) {
 			
 			sum += n;
-	
 		}
+		System.out.println("Result of 100까지의 합: " + sum);
 
-		
 		//홀수의 합
 		sum = 0;
 		

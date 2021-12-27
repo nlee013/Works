@@ -26,7 +26,7 @@ public class Test22 {
 		switch(oper) {
 
 		// printf에서 oper가 char문자이므로 %c로 표기함
-		case '+':
+		case '+': //character는 작은 따옴표 '문자'
 			System.out.printf("%d%c%d=%d\n", n1, oper, n2, (n1 + n2)); break;
 
 		case '-':

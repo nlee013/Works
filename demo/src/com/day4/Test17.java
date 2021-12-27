@@ -20,7 +20,7 @@ public class Test17 {
 		
 		//무조건. 계속 실행되는 것을 무한 루프라 표함. 부등호는 true/false로 인식하지만, true로 하면 무한루프됨.
 		
-		while(true) {
+		while(true) {//무한 루프. append 매소드도 나중에 나옴.
 			
 			do{
 				System.out.print("Which number do you want?");//100
@@ -37,7 +37,7 @@ public class Test17 {
 			}
 			
 			System.out.println("1~" + num + "까지의 sum: " + sum);
-			System.out.print("Do you want to continue? "); //Y, y, N, n
+			System.out.print("Do you want to continue?: "); //Y, y, N, n
 			
 			ans = (char)System.in.read();
 			

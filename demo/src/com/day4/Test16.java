@@ -17,7 +17,7 @@ public class Test16 {
 		
 		//가장 쉽게 사용가능한 반복문은 if이며, 초기값을 설정해줘야됨.
 		
-		for(int i = 1; i <= 9; i++){
+		for(int i = 1; i <= 9; i++){ //배열할 때 1=0;하면 i<9;로 부등호의 =가 없음.
 			
 			System.out.println(unit + "*" + i + "=" + (unit*i));
 		}

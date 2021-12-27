@@ -18,7 +18,7 @@ public class Test23 {
 		
 		System.out.print("다섯개의 변수? "); //5 7 9 3 2
 		
-		for(int i = 0; i< num.length; i++) { 
+		for(int i = 0; i< num.length; i++) { //num.length는 int[5]를 받는다. 0~4까지 5번 실행
 			num[i] = sc.nextInt();
 
 		}
@@ -54,7 +54,7 @@ public class Test23 {
 		//배열의 length는 괄호()가 없음
 		System.out.println("배열 갯수: " + num.length); //-> length는 위 코드의 int[5]-> 5개를 가져온다. 
 		
-		num[3] = 100;
+		num[3] = 100;//[0][1][2][3]->[3]에 100값이 들어감.
 		System.out.println("num[3]: " + num[3]);
 		
 		int a = num[3] - 30;

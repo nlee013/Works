@@ -1,3 +1,5 @@
+package com.day2;
+
 
 public class Test3 {
 
@@ -38,3 +40,4 @@ public class Test3 {
 	
 	}
 }
+
